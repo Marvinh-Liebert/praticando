@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+:root{
+    --principal: #FAF5EF;
+    --txt-main: #000000;
+
+    --laranja00: #E78A4E;
+    --laranja01: #D05A20;
+    --laranja02: #A73E10;
+    --marrom00: #9E6B48;
+    --marrom01: #5C3A21;
+    --marrom02: #3B2010;
+}
+
+body{
+    background-color: var(--marrom02);
+
+    display: grid;
+    grid-template-columns: 10% 80vw 10%;
+    grid-template-rows: repeat(3, 33%);
+}
+
+div#crono{
+    grid-column: 2/3;
+    grid-row: 2;
+    margin: auto;
+    text-align: center;
+
+    h1{
+        font-size: 5em;
+        color: var(--principal);
+        text-shadow: 2px 2px 4px black;
+    }
+
+    button{
+        padding: 1.2em;
+        border-radius: 50px;
+        font-size: 1.2em ;
+        margin: 10px;
+
+        background-color: transparent;
+        border: 3px solid var(--principal);
+        color: var(--principal);
+    }
+
+    button:hover{
+        border: 3px solid var(--laranja01);
+        color: var(--laranja01);
+        cursor: pointer;
+    }
+}
