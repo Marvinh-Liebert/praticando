@@ -27,7 +27,6 @@ div#crono{
     text-align: center;
 
     h1{
-        font-size: 5em;
         color: var(--principal);
         text-shadow: 2px 2px 4px black;
     }
@@ -35,7 +34,6 @@ div#crono{
     button{
         padding: 1.2em;
         border-radius: 50px;
-        font-size: 1.2em ;
         margin: 10px;
 
         background-color: transparent;
