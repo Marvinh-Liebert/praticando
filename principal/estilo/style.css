@@ -38,12 +38,36 @@ header{
     background-color: var(--marrom01);
     margin-bottom: 20px ;
     
-    img{
-        height: 200px;
-        border-radius: 50%;
-        border: 4px solid transparent;
-        outline: 4px solid var(--laranja01);
+    div#logo{
+        position: relative;
+        margin: 105px;
         
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            position: absolute;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid transparent;
+            outline: 4px solid var(--laranja01); 
+        }
+
+        img#lain1{
+            opacity: 0;
+        }
+
+        img#lain0:hover{
+            opacity: 0;
+        }
+
+        img#lain1:hover{
+            border-radius: 50%;
+            height: 200px;
+            opacity: 1;
+            cursor: pointer;
+        }
     }
 
     h1{
